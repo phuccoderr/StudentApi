@@ -37,7 +37,6 @@ https://www.w3schools.com/java/java_operators.asp
 - Super Class ( gọi method class cha )
 - Abstract Class ( khai báo abstract class cha và tạo method abstract rỗng, khi đó class nào kế thừa phải override lại method abstract từ class cha )
 - Polymorphism ( Tính đa hình )
-- 
 # Java Autoboxing/Unboxing (Object wrapper class)
 - Do OOP ít làm việc Primitive (kiểu dữ liệu nguyên thuỷ ) nên chúng ta phải convert "primitive type" -> "non-primitive type"
 - Ví dụ: boolean -> Boolean, long -> Long, char -> Character... ( Gọi là Autoboxing, còn Unboxing là ngược lại )
@@ -51,4 +50,44 @@ ArrayList a = new ArrayList();
 ~~~
 ArrayList<String> a = new ArrayList<String>(); ( <type> chỉ định kiểu dữ liệu rõ ràng )
 ~~~
-# Java Inheritance
+# Interface
+- keyword implements thay vì extends và class sử dụng interface bắt buộc phải ghi đè các method có trong interface
+# Interface trong java 8
+- Tăng tính mềm dẽo cho Interface, khi thêm default vào method thì không cần phải ghi đè mà vẫn có thể sử dụng được
+~~~
+public interface father {
+  default void speak() {
+    system.out.println("Hello");
+  }
+}
+public class child implements father() {
+  
+}
+~~~
+# Java package 
+- package === folder => nơi chứa code
+- package: được tạo nên bởi tập hợp ( class / interface )
+- package: có thể chứa sub-package ( cha/con )
+- cú pháp: import package_name.class_name
+# Try...catch
+- Chương trình khi được chạy gồm 2 bước:
+  - compile ( từ code java -> byte code ). nếu có lỗi, thì chương trình báo ngay ( ko đề cập tới lỗi này )
+  - run ( từ byte code -> JVM rum ). nếu có lỗi chương trình ngỏm lun.
+  - => Ngoại lệ là các lỗi xảy ra khi run chương trình và khiến chương trình chúng ta stop
+- Keyword finally:
+  - Finally: dù có ngoại lệ hay không thì hàm finally luôn được chạy. ( cho dù có return, continue or break đi nữa )
+- Throws:
+  - viết function/class tổng quát (re-use), không nên dùng try catch
+  ~~~
+  public class phuc throws IOException() { }
+  ~~~
+- Throw:
+  - ném lỗi trực tiếp bên trong hàm
+  ~~~
+  public class phuc() {
+    if (age <18 ) {
+      throw new IOException("message");
+    }
+    return age;
+  }
+  ~~~ 
