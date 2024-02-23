@@ -15,5 +15,5 @@
   - @Value để lấy giá trị trong file properties.
 - @Valid: Dùng để kiểm tra dữ liệu có đúng như mình mong muốn hay không.
 - @ReponseBody: Thông báo cho người dùng biết rằng APIở controller, sẽ trả về một đối tượng Object kiểu Json cho client chứ không render ra một trang view.
-# So sánh spring MVC,BOOT,Framework
+# Khái niệm Spring MVC,BOOT,Framework
 - https://viblo.asia/p/java-overview-phan-1-spring-vs-spring-boot-vs-spring-mvc-3P0lPDpblox
