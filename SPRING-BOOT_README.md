@@ -1,5 +1,9 @@
 # Spring Boot là gì ?
 - https://viblo.asia/p/hoc-spring-boot-bat-dau-tu-dau-6J3ZgN7WKmB
+# Spring IoC 
+- Trong Spring, Spring Container (IoC Container) sẽ tạo các đối tượng, lắp rắp chúng lại với nhau, cấu hình các đối tượng và quản lý vòng đời của chúng từ lúc tạo ra cho đến lúc bị hủy.
+- Spring container sử dụng DI để quản lý các thành phần, đối tượng để tạo nên 1 ứng dụng. Các thành phần, đối tượng này gọi là Spring Bean
+![spring-IOC](https://github.com/phuccoderr/StudentApi/assets/124669538/664a34fa-3e58-4e99-b92c-0c65d8b81d50)
 # Các anotation cần nắm trong spring
 - ***@Autowire***: Tự động nhúng các bean được Spring Container sinh ra vào các class được khai báo @Autowire
 - ***@Configuration***: Được sử dụng để chỉ ra rằng, Class khai báo sử dụng @Configuration sẽ khai báo một hoặc nhiều @Bean method trong class đó.
